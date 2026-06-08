@@ -19,8 +19,8 @@ int main() {
     int three = one + two;
 
     int i = 3;
-    printf("calculating fib \i\n", i);
+    printf("calculating fib %i\n", i);
     int result = fib(i);
-
+    printf("%i", result);
     return 0;
 }
