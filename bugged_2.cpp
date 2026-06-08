@@ -4,11 +4,14 @@ using namespace std;
 
 int find_largest(vector<int> int_arr){
     int a_small_value = 0;
+    //comparing the value with every element in the arr
     for(int i : int_arr){
         if(a_small_value < int_arr[i]){
             a_small_value = int_arr[i];
         }
     }
+    //the small value will slowly grow to the largest value in the function during comparisons. 
+    return a_small_value;
 }
 
 int main(){
